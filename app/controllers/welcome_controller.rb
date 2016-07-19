@@ -11,7 +11,7 @@ class WelcomeController < ApplicationController
   end
 
   def connect
-    Basecamp.establish_connection('nogginlabs.basecamphq.com', '', 'X', true)
+    Basecamp.establish_connection('nogginlabs.basecamphq.com', 'GETYOUROWNAPIKEY', 'X', true)
   end
 
   def get_data_as_json
